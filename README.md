@@ -1,7 +1,7 @@
-# react-project-display
-My first touch with React library, can't wait what'll be happend :D
+# 🥁 See how React work ! 🥁
+My first touch with React JS library, can't wait what'll be happend :D
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
