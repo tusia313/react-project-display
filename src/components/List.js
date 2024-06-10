@@ -6,9 +6,7 @@ const List = ({listData}) => {
         <>
         <ListTitle listTitle = {listData.title} />
         <ol>
-            <li>{listData.list[0]}</li>
-            <li>{listData.list[1]}</li>
-            <li>{listData.list[2]}</li>
+            {listData.list.map((list, index) => <li key = {index}>{list}</li>)}
         </ol>
         </>
     )

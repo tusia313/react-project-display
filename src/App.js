@@ -6,7 +6,7 @@ const App = () => {
   let isLoggenIn = false
   const listData = {
     title: "Skill set",
-    list: ["HTML knowledge", "CSS proficiency", "JS wizz"]
+    list: ["HTML knowledge", "CSS proficiency", "JS wizz", "React magician"]
   }
   return (
     <div style = {{ backgroundColor : isLoggenIn ? "green" : "violet"}}>
