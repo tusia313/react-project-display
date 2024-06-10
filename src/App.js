@@ -1,21 +1,26 @@
 import { useLayoutEffect } from "react"
 import CustomHeader from "./components/CustomHeader"
-import List from "./components/List"
+import Card from "./components/Card"
+
 
 const App = () => {
-  let isLoggenIn = false
-  const listData = {
-    title: "Skill set",
-    list: ["HTML knowledge", "CSS proficiency", "JS wizz", "React magician"]
-  }
+  const skillSet = [
+    {
+      skill: "HTML knowledge",
+      description: "A good grasp of..."
+    },
+    {
+      skill: "CSS proficiency",
+      description: "Knowing how to build..."
+    },
+    {
+      skill: "JavaScript wizz",
+      description: "Here's come all magic !"
+    }
+  ]
   return (
-    <div style = {{ backgroundColor : isLoggenIn ? "green" : "violet"}}>
-    <CustomHeader title = {"My arm is hurted"} color = {"purple"}/>
-    <CustomHeader title = {"Is it me You are looking for?"} color = {"navy"}/>
-    <CustomHeader title = {"Cuz I wonder where You are."} color = {"lemon"}/>
-    <p className="subtitle">{isLoggenIn ? "Welcome back !" : "Please log in."}</p>
-    {!isLoggenIn && <button>Sign in</button>}
-    <List listData = {listData} />
+    <div>
+      <CustomHeader title={"My app"} />
     </div>
   )
 }

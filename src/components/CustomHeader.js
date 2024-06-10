@@ -1,5 +1,9 @@
-const CustomHeader = ({title, color}) => {
-    // const title = "My App"
-    return <h1 style = {{backgroundColor : color}}>{title}</h1>
+const CustomHeader = ({ title }) => {
+
+    return (
+        <header>
+            <h1>{title}</h1>
+        </header>
+    )
 }
 export default CustomHeader
