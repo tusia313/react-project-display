@@ -1,13 +1,14 @@
 import ListTitle from "./ListTitle"
 
-const List = ({listTitle}) => {
+const List = ({listData}) => {
+    console.log(listData)
     return (
         <>
-        <ListTitle listTitle = {listTitle} />
+        <ListTitle listTitle = {listData.title} />
         <ol>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>{listData.list[0]}</li>
+            <li>{listData.list[1]}</li>
+            <li>{listData.list[2]}</li>
         </ol>
         </>
     )
