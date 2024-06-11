@@ -21,6 +21,7 @@ const App = () => {
   return (
     <div>
       <CustomHeader title={"My app"} />
+      {skillSet.map(skillSet => <Card key = {skillSet.id} skillSet = {skillSet}/>)}
     </div>
   )
 }
